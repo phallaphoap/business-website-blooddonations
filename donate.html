@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="donate-styles.css" />
+    <title>Donate Blood</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-container">
+        <img
+          src="blood-icon.jpg"
+          alt="HERO Blood Donation Center Logo"
+          class="logo"
+        />
+        <h1>HERO Blood Donation Center</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="donate-form">
+        <h2>Donate Blood</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+
+          <div class="form-group">
+            <label for="blood-type">Blood Type:</label>
+            <select id="blood-type" name="blood-type" required>
+              <option value="" disabled selected>Select your blood type</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="AB">AB</option>
+              <option value="O">O</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="donation-date">Preferred Donation Date:</label>
+            <input
+              type="date"
+              id="donation-date"
+              name="donation-date"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="health-condition">Health Condition:</label>
+            <textarea
+              id="health-condition"
+              name="health-condition"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section class="eligibility">
+        <h2>Donor Eligibility</h2>
+        <p>
+          Check if you are eligible to donate blood. If you are healthy and
+          above 18 years old, you can donate blood. OR fill out the form. It's
+          that easy!
+        </p>
+        <a href="contact.html">Ask our Team Questions</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 HERO Blood Donation Center. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
